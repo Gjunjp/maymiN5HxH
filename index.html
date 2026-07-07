@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏰 馬卡龍夢幻城堡 - 獵人日文文法寶典 ✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --macaron-pink: #ffd1dc;
+            --macaron-blue: #aec6cf;
+            --macaron-yellow: #fdfd96;
+            --macaron-purple: #c3b1e1;
+            --macaron-mint: #b5ead7;
+        }
+        body {
+            font-family: 'Nunito', 'M PLUS Rounded 1c', sans-serif;
+            background: radial-gradient(circle at top left, var(--macaron-pink) 0%, transparent 40%),
+                        radial-gradient(circle at bottom right, var(--macaron-mint) 0%, transparent 40%),
+                        radial-gradient(circle at center, var(--macaron-yellow) 0%, transparent 50%),
+                        #fdfbfb;
+            min-height: 100vh;
+            background-attachment: fixed;
+            color: #5e548e;
+        }
+        /* Castle Card Styling */
+        .castle-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 4px solid #fff;
+            border-radius: 2rem;
+            box-shadow: 0 15px 35px rgba(255, 209, 220, 0.6), inset 0 0 0 2px var(--macaron-pink);
+            position: relative;
+        }
+        .castle-card::before {
+            content: "👑";
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            z-index: 10;
+        }
+        /* Grammar Box Styling */
+        .grammar-box {
+            background: linear-gradient(135deg, #fff9fb 0%, #f0f7ff 100%);
+            border: 2px dashed var(--macaron-blue);
+            border-radius: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .grammar-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(174, 198, 207, 0.4);
+        }
+        /* Ruby text (Furigana) */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            color: #ff8fab;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        /* Custom Button */
+        .btn-macaron {
+            background: linear-gradient(135deg, var(--macaron-pink), var(--macaron-purple));
+            color: white;
+            border: none;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(195, 177, 225, 0.5);
+            transition: all 0.2s ease;
+        }
+        .btn-macaron:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(195, 177, 225, 0.8);
+        }
+        .btn-macaron:disabled {
+            background: #e2e8f0;
+            color: #a0aec0;
+            transform: none;
+            box-shadow: none;
+            cursor: not-allowed;
+        }
+        /* Page Transition Animation */
+        .page-slide {
+            animation: slideIn 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+    </style>
+</head>
+<body class="py-10 px-4 md:px-10 flex justify-center items-center">
+
+    <div class="max-w-4xl w-full castle-card p-6 md:p-10">
+        
+        <!-- Header -->
+        <div class="text-center mb-8 relative">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-500 mb-2">
+                🏰 馬卡龍夢幻城堡 ✨
+            </h1>
+            <h2 class="text-xl md:text-2xl font-bold text-gray-600">HUNTER×HUNTER 日文文法寶典</h2>
+            <div class="absolute top-0 right-0 text-3xl animate-bounce">🎀</div>
+            <div class="absolute top-0 left-0 text-3xl animate-pulse">🦄</div>
+        </div>
+
+        <!-- Pagination Container -->
+        <div id="pagination-container" class="min-h-[500px]">
+            
+            <!-- Page 1 -->
+            <div class="page-card block page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">1. ～は～です</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1はN2です（か）／じゃないです　Nはなんですか</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「A是B」。用來敘述人事物的主題與狀態。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>私<rt>わたし</rt></ruby>はハンターです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我是獵人。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレの<ruby>敗因<rt>はいいん</rt></ruby>は<ruby>容量<rt>メモリ</rt></ruby>の<ruby>無駄<rt>むだ</rt></ruby><ruby>使<rt>づか</rt></ruby>いじゃないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我的敗因不是記憶體的浪費。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">2. ～ができる</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N（言葉）ができます（か）　Nはできません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「會、能夠」做某事或懂某種技能。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゴンは<ruby>念<rt>ねん</rt></ruby>ができます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">小傑會使用念能力。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>妥協<rt>だきょう</rt></ruby>ができません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我（酷拉皮卡）無法妥協。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 2 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">3. ～も</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nも</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「也...」。取代主格的「は」或「が」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">キルアもゴンと<ruby>友達<rt>ともだち</rt></ruby>になりたいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">奇犽也想和小傑交朋友。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>宇宙<rt>うちゅう</rt></ruby>もオレに<ruby>興味<rt>きょうみ</rt></ruby>がない。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">宇宙對我也沒有興趣。（宰伊洛）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">4. ～と～</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（人）とN2（人）</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「和...、與...」。用來連接兩個名詞。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゴンとキルアは<ruby>仲間<rt>なかま</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">小傑和奇犽是同伴。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">フランクリンとフェイタンは<ruby>盗賊<rt>とうぞく</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">富蘭克林和飛坦是盜賊。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 3 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">5. ～に住んでいる</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N（場所）に住んでいます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「居住在...（某個地方）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゼノはククルーマウンテンに<ruby>住<rt>す</rt></ruby>んでいます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">桀諾住在枯枯戮山。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレたちは<ruby>流星街<rt>りゅうせいがい</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでいません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我們不住在流星街。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">6. ～の～</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（人）のN2（人）</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示所屬關係或身分關係，「...的...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">これは<ruby>銀河<rt>ぎんが</rt></ruby>の<ruby>祖母<rt>そぼ</rt></ruby>の<ruby>占<rt>うらな</rt></ruby>いです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">這是銀河祖母的占卜。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ジンはゴンの<ruby>父親<rt>ちちおや</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">金是小傑的父親。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 4 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">7. ～が好き</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nが好きです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「喜歡...」。喜歡的對象後方使用助詞「が」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">いいハンターは<ruby>動物<rt>どうぶつ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">優秀的獵人喜歡動物。（凱特）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ヒソカは<ruby>強<rt>つよ</rt></ruby>い<ruby>敵<rt>てき</rt></ruby>が<ruby>好<rt>す</rt></ruby>きです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">西索喜歡強大的敵人。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">8. ～は好きじゃない</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nは好きじゃないです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示「不喜歡...」。是「好きです」的否定形。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">クラピカは<ruby>蜘蛛<rt>くも</rt></ruby>は<ruby>好<rt>す</rt></ruby>きじゃないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">酷拉皮卡不喜歡蜘蛛。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>敗北<rt>はいぼく</rt></ruby>は<ruby>好<rt>す</rt></ruby>きじゃないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我不喜歡失敗。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 5 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">9. ～を～ます</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">NをV‐ます　NはV‐ません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示動作的對象，「做...（動作）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレ<ruby>達<rt>たち</rt></ruby><ruby>盗賊<rt>とうぞく</rt></ruby>は<ruby>欲<rt>ほ</rt></ruby>しいモノを<ruby>奪<rt>うば</rt></ruby>い<ruby>取<rt>と</rt></ruby>ります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我們盜賊會奪取想要的東西。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">イルミは<ruby>仲間<rt>なかま</rt></ruby>を<ruby>裏切<rt>うらぎ</rt></ruby>りません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">伊耳謎不會背叛同伴。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">10. よく</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">よくV‐ます　あまりV‐ません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示頻率的副詞，「經常...／不太...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ビスケはよく<ruby>嘘<rt>うそ</rt></ruby>をつきます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">比司吉經常說謊。（奇犽吐槽）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>王<rt>おう</rt></ruby>はあまり<ruby>命乞<rt>いのちご</rt></ruby>いに<ruby>耳<rt>みみ</rt></ruby>を<ruby>貸<rt>か</rt></ruby>しません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">王不太傾聽求饒。（梅路艾姆）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 6 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">11. 好きな～</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">好きな／嫌いなN1はN2です</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>連體修飾，表示「喜歡的／討厭的（名詞）是...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>好<rt>す</rt></ruby>きな<ruby>飲<rt>の</rt></ruby>み<ruby>物<rt>もの</rt></ruby>はコーヒーです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">喜歡的飲料是咖啡。（庫洛洛）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>嫌<rt>きら</rt></ruby>いな<ruby>奴<rt>やつ</rt></ruby>はイエスマンです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">討厭的傢伙是唯命是從的人。（尼特羅）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">12. ～で（～ます）</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N（場所）でV‐ます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示動作發生的場所，「在...（地方）做...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレはここで<ruby>死<rt>し</rt></ruby>にます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我會在這裡死掉。（史庫瓦拉）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">レオリオは<ruby>街<rt>まち</rt></ruby>で<ruby>勝負<rt>しょうぶ</rt></ruby>します。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">雷歐力在街上決勝負。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 7 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">13. ～は～です (い形容詞)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">NはイA‐いです／イA‐くないです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示事物的狀態，「（名詞）很...／不...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>死<rt>し</rt></ruby>は<ruby>全<rt>まった</rt></ruby>く<ruby>怖<rt>こわ</rt></ruby>くないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">死亡一點也不可怕。（酷拉皮卡）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">この<ruby>道<rt>みち</rt></ruby>は<ruby>危<rt>あぶな</rt></ruby>いです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">這條路很危險。（普哈特）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">14. ～に～がある</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（場所）にN2（物）があります／ありません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示無生命物體的存在，「（某地）有...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>心<rt>こころ</rt></ruby>に<ruby>怒<rt>いか</rt></ruby>りがあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">心中有著憤怒。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>世界<rt>せかい</rt></ruby>に<ruby>境界<rt>きょうかい</rt></ruby>はありません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">世界沒有邊界。（梅雷翁）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 8 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">15. ～に～がいる</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（場所）にN2（生物）がいます／いません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示有生命物體（人、動物）的存在，「（某地）有...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">この<ruby>街<rt>まち</rt></ruby>にいい<ruby>仲間<rt>なかま</rt></ruby>がいます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">這條街上有好同伴。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ここに<ruby>化物<rt>ばけもの</rt></ruby>がいません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">這裡沒有怪物。（雲古）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">16. ～が【数】ある</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nが【数】あります</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示數量的存在，「有（多少）個...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>不自由<rt>ふじゆう</rt></ruby>な<ruby>選択肢<rt>せんたくし</rt></ruby>が二つあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">有兩個不自由的選項。（賽吒）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>修羅場<rt>しゅらば</rt></ruby>がいくつかあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">有好幾個修羅場。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pages 9 to 28 generated continuously -->
+            
+            <!-- Page 9 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">17. ～は～です (形容詞變化)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">NはイA‐いです／イA‐くないです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>重溫形容詞肯定與否定表現。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">キルアの<ruby>光<rt>ひかり</rt></ruby>は<ruby>眩<rt>まぶ</rt></ruby>しいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">奇犽覺得小傑的光很耀眼。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ハンターの<ruby>仕事<rt>しごと</rt></ruby>は<ruby>甘<rt>あま</rt></ruby>くないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">獵人的工作並不輕鬆。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">18. ～は～の～</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1はN2のN3 （位置）です</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示相對位置，「...在...的（上下左右等）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ネテロは<ruby>王<rt>おう</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">尼特羅在王的前面。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゴンはキルアの<ruby>傍<rt>そば</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">小傑在奇犽的旁邊。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 10 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">19. ～時</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">～時です</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示當下時間，「現在是...點鐘」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>今<rt>いま</rt></ruby>は<ruby>午後<rt>ごご</rt></ruby>3<ruby>時<rt>じ</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">現在是下午3點。（咖啡時間）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレの<ruby>誕生日<rt>たんじょうび</rt></ruby>は12<ruby>時<rt>じ</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我的生日是12點開始。（伊卡魯哥）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">20. ～時に（～ます）</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">～時に／ごろV‐ます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示動作發生的具體時間，「在...點做...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">メルエムは8<ruby>時<rt>じ</rt></ruby>に<ruby>軍儀<rt>ぐんぎ</rt></ruby>をします。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">梅路艾姆在8點下軍儀棋。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ヒソカは9<ruby>時<rt>じ</rt></ruby>ごろ<ruby>来<rt>き</rt></ruby>ます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">西索大約9點來。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 11 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">21. ～から～まで</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（時間）からN2（時間）まで</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示時間的起點與終點，「從...點到...點」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>朝<rt>あさ</rt></ruby>から<ruby>夜<rt>よる</rt></ruby>まで<ruby>電気<rt>でんき</rt></ruby>を<ruby>浴<rt>あ</rt></ruby>びます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">從早到晚承受電擊。（奇犽）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">1<ruby>時<rt>じ</rt></ruby>から3<ruby>時<rt>じ</rt></ruby>まで<ruby>休<rt>やす</rt></ruby>みます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">從1點休息到3點。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">22. ～時間</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">～時間V‐ます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示時間的長度，「做...（多久時間）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>何時間<rt>なんじかん</rt></ruby>も<ruby>逃<rt>に</rt></ruby>げます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我逃跑了好幾個小時。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ジンは10<ruby>時間<rt>じかん</rt></ruby><ruby>待<rt>ま</rt></ruby>ちます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">金等了10個小時。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 12 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">23. ～がいい</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N（曜日･時間）がいいです　Nはだめです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示選擇或提議的偏好時間，「...比較好／不行」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>明日<rt>あした</rt></ruby>がいいです。<ruby>今日<rt>きょう</rt></ruby>はだめです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">明天比較好。今天不行。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>日曜日<rt>にちようび</rt></ruby>がいいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">星期天比較好。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">24. ～が好き (對比)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nが好きで　Nは好きじゃないです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>用「で」連接，對比喜歡和不喜歡的事物。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>仲間<rt>なかま</rt></ruby>が<ruby>好<rt>す</rt></ruby>きで、<ruby>裏切<rt>うらぎ</rt></ruby>り<ruby>者<rt>もの</rt></ruby>は<ruby>好<rt>す</rt></ruby>きじゃないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我喜歡同伴，不喜歡背叛者。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ナックルは<ruby>犬<rt>いぬ</rt></ruby>が<ruby>好<rt>す</rt></ruby>きで、<ruby>理不尽<rt>りふじん</rt></ruby>は<ruby>好<rt>す</rt></ruby>きじゃないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">拿酷戮喜歡狗，不喜歡不講理。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 13 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">25. ～ができる (能力)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nができます　Nはできません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>再次複習能力的肯定與否定。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゲンスルーは<ruby>爆破<rt>ばくは</rt></ruby>ができます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">甘舒會爆破。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>命乞<rt>いのちご</rt></ruby>いができません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我無法求饒。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">26. ～で（～ます）</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N（場所）でV‐ます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示動作發生的地點。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>流星街<rt>りゅうせいがい</rt></ruby>でモノを<ruby>奪<rt>うば</rt></ruby>います。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">在流星街奪取東西。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ここで<ruby>真剣<rt>しんけん</rt></ruby>にぶつかります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">在這裡認真地起衝突。（拿酷戮）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 14 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">27. ときどき・あまり・ぜんぜん</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">ときどきV‐ます　あまり／ぜんぜんV‐ません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示頻率的副詞，「有時／不太／完全不」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ジンはときどき<ruby>嘘<rt>うそ</rt></ruby>をつきます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">金有時會說謊。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゼノはぜんぜん<ruby>割<rt>わ</rt></ruby>に<ruby>合<rt>あ</rt></ruby>いません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">桀諾覺得完全不划算。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">28. ～に～がある (日期)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（日付・曜日）にN2（イベント）があります</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示某個時間點有特定的活動。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>明日<rt>あした</rt></ruby>に<ruby>誕生日<rt>たんじょうび</rt></ruby>パーティーがあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">明天有生日派對。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>今日<rt>きょう</rt></ruby>にハンター<ruby>試験<rt>しけん</rt></ruby>があります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">今天有獵人試驗。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 15 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">29. ～で～がある (活動地點)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（場所）でN2（イベント）があります</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示某個地點舉辦特定的活動。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ヨークシンシティでオークションがあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">友克鑫市有拍賣會。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">トリックタワーでクイズがあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">陷阱塔裡有猜謎。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">30. ～に行く</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">NをV‐ますに行きます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示移動的目的，「去（做）...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">クラピカは<ruby>蜘蛛<rt>くも</rt></ruby>を<ruby>倒<rt>たお</rt></ruby>しに<ruby>行<rt>い</rt></ruby>きます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">酷拉皮卡去打倒蜘蛛。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">レオリオは<ruby>医者<rt>いしゃ</rt></ruby>になりに<ruby>行<rt>い</rt></ruby>きます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">雷歐力去當醫生。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 16 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">31. ～ませんか</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">V‐ませんか</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>邀請對方一起做某事，「要不要...？」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>一緒<rt>いっしょ</rt></ruby>に<ruby>乾杯<rt>かんぱい</rt></ruby>しませんか。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">要不要一起乾杯？（狄哥）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ここで<ruby>勝負<rt>しょうぶ</rt></ruby>しませんか。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">要不要在這裡決勝負？（雷歐力）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">32. ～ましょう</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">V‐ましょう</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>提議或回應對方的邀請，「我們來...吧！」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ぜんぶ<ruby>奪<rt>うば</rt></ruby>い<ruby>取<rt>と</rt></ruby>りましょう。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我們把一切都奪走吧！</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>別<rt>べつ</rt></ruby>のところから<ruby>出<rt>で</rt></ruby>ましょう！</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">從別的地方出去吧！</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 17 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">33. ～から～まで～で～ます</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1からN2までN3（手段）でV‐ます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示從A地到B地，使用某種交通手段。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">くじら<ruby>島<rt>とう</rt></ruby>から<ruby>会場<rt>かいじょう</rt></ruby>まで<ruby>船<rt>ふね</rt></ruby>で<ruby>行<rt>い</rt></ruby>きます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">從鯨魚島搭船去會場。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ヨークシンからＮＧＬまで<ruby>車<rt>くるま</rt></ruby>で<ruby>行<rt>い</rt></ruby>きます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">從友克鑫搭車去NGL。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">34. ～に乗る・～を降りる</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（場所）でN2に乗ります／降ります</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示搭乘（に）或離開（を）交通工具。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゴンは<ruby>港<rt>みなと</rt></ruby>で<ruby>船<rt>ふね</rt></ruby>に<ruby>乗<rt>の</rt></ruby>ります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">小傑在港口搭船。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">キルアは<ruby>駅<rt>えき</rt></ruby>で<ruby>飛行船<rt>ひこうせん</rt></ruby>を<ruby>降<rt>お</rt></ruby>ります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">奇犽在車站下飛行船。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 18 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">35. ～は～がいい</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1はN2がいいです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示選擇，「（關於某事）...比較好」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>仲間<rt>なかま</rt></ruby>はゴンがいいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">同伴的話小傑比較好。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>次<rt>つぎ</rt></ruby>の<ruby>手<rt>て</rt></ruby>はこれがいいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">下一步棋走這步比較好。（梅路艾姆）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">36. ～から</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">ナA‐／イA‐いですから。</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示原因、理由，「因為...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>奴<rt>やつ</rt></ruby>らのキズナは<ruby>強<rt>つよ</rt></ruby>いですから。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">因為他們的羈絆很深。（流星街）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">この<ruby>世界<rt>せかい</rt></ruby>は<ruby>残酷<rt>ざんこく</rt></ruby>ですから。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">因為這個世界很殘酷。（龐姆）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 19 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">37. 形容詞＋N</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">ナA‐な／イA‐い＋N</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>形容詞修飾名詞。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">それは<ruby>不自由<rt>ふじゆう</rt></ruby>な二<ruby>択<rt>たく</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">那是不自由的二選一。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">カイトはいいハンターです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">凱特是個優秀的獵人。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">38. ～に～がある</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（場所）にN2があります</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示物品存在的位置。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>地下<rt>ちか</rt></ruby>にオークションの<ruby>品<rt>しな</rt></ruby>があります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">地下室有拍賣品。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレの<ruby>前<rt>まえ</rt></ruby>に<ruby>道<rt>みち</rt></ruby>があります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我面前有一條路。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 20 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">39. ～の～</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1のN2（位置）</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示具體位置的從屬，「...的（上/下/前/後）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">トリックタワーの<ruby>下<rt>した</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">陷阱塔的下面。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">キルアの<ruby>隣<rt>となり</rt></ruby>です。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">奇犽的旁邊。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">40. ～は～にある</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1はN2にあります</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示物品所在的具體地點，「...在...（地方）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">その<ruby>本<rt>ほん</rt></ruby>はヨークシンにあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">那本書在友克鑫。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>手掛<rt>てがか</rt></ruby>かりはテープにあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">線索在錄音帶裡。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 21 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">41. ～は～にいる</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（人）はN2にいます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示人或動物所在的具體地點，「...在...（地方）」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">カイトはここにいます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">凱特在這裡。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">パリストンは<ruby>協会<rt>きょうかい</rt></ruby>にいます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">帕利士通在協會裡。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">42. ～が欲しい</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">Nが欲しいです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示想要得到某物，「想要...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>目<rt>め</rt></ruby>の<ruby>前<rt>まえ</rt></ruby>にない「<ruby>何<rt>なに</rt></ruby>か」が<ruby>欲<rt>ほ</rt></ruby>しいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我想要眼前的「某物」。（金）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゲンスルーはカードが<ruby>欲<rt>ほ</rt></ruby>しいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">甘舒想要卡片。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 22 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">43. あげる</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（人）にN2をあげます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示給予他人某物，「給...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">メルエムはコムギに<ruby>時間<rt>じかん</rt></ruby>をあげます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">梅路艾姆給小麥時間。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">クラピカは<ruby>敵<rt>てき</rt></ruby>に<ruby>忠告<rt>ちゅうこく</rt></ruby>をあげます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">酷拉皮卡給敵人忠告。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">44. もらう</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N1（人）にN2をもらいます</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示從他人那裡得到某物，「收到...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゴンはジンにテープをもらいます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">小傑收到金的錄音帶。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">キルアはシルバに<ruby>教<rt>おし</rt></ruby>えをもらいます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">奇犽獲得席巴的教誨。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 23 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">45. ～ました</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">V‐ました</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>動詞過去式，表示動作已完成。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">とんでもない<ruby>怪物<rt>かいぶつ</rt></ruby>を<ruby>起<rt>お</rt></ruby>こしました。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">喚醒了不得了的怪物。（雲古）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">いい<ruby>仲間<rt>なかま</rt></ruby>を<ruby>持<rt>も</rt></ruby>ちました。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">擁有了好同伴。（酷拉皮卡）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">46. ～はいくらですか</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">N（これ／それ／あれ）はいくらですか</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>詢問價格，「...多少錢？」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">この<ruby>壺<rt>つぼ</rt></ruby>はいくらですか。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">這個壺多少錢？（仙派）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">そのオークションの<ruby>品<rt>しな</rt></ruby>はいくらですか。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">那個拍賣品多少錢？</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 24 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">47. ～をください</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">この／その／あのNをください</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>請求別人給予某物，「請給我...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">その<ruby>木彫<rt>きぼ</rt></ruby>りをください。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">請給我那個木雕。（仙派）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>時間<rt>じかん</rt></ruby>をください。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">請給我一點時間。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">48. ～ました (引用與結果)</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">V‐ました</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>動詞過去式的延伸應用。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ジンさんは<ruby>言<rt>い</rt></ruby>いました。ゴンは<ruby>本物<rt>ほんもの</rt></ruby>だ。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">金先生說了。小傑是真材實料。（凱特）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレはまともに<ruby>生<rt>い</rt></ruby>きたかったです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我只想要好好活著啊。（比諾透）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 25 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">49. ～かったです</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">イA‐かったです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>い形容詞的過去式，「過去很...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">あの<ruby>時<rt>とき</rt></ruby>のキルアは<ruby>眩<rt>まぶ</rt></ruby>しかったです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">那時的奇犽很耀眼。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">あの<ruby>敵<rt>てき</rt></ruby>は<ruby>強<rt>つよ</rt></ruby>かったです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">那個敵人很強。（尼特羅）</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">50. ～でした</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">ナA‐でした</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>な形容詞或名詞的過去式，「過去是...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレの<ruby>敗因<rt>はいいん</rt></ruby>は<ruby>認識不足<rt>にんしきぶそく</rt></ruby>でした。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我的敗因是認知不足。（伊摩利）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">それは<ruby>残酷<rt>ざんこく</rt></ruby>な<ruby>空想<rt>くうそう</rt></ruby>でした。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">那是殘酷的空想。</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 26 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">51. どこにも・なにも</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">どこにも／なにもV‐ません</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>疑問詞加上も與否定，表示全面否定「哪裡都不／什麼都不」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレはなにも<ruby>奪<rt>うば</rt></ruby>いません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我什麼都不奪取。（流星街精神）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">パームはどこにも<ruby>行<rt>い</rt></ruby>きません。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">龐姆哪裡都不去。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">52. それから</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">S1。それから、S2。</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>接續詞，表示先後順序或補充，「然後...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>逃<rt>に</rt></ruby>げました。それから、<ruby>泣<rt>な</rt></ruby>きました。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我逃跑了。然後，哭了。（奇犽）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>約束<rt>やくそく</rt></ruby>します。それから、<ruby>絶対<rt>ぜったい</rt></ruby>に<ruby>守<rt>まも</rt></ruby>ります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">立下約定。然後，絕對遵守。（金）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 27 -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">53. でも</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">S1。でも、S2。</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>逆接接續詞，「但是...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>世界<rt>せかい</rt></ruby>は<ruby>大事<rt>だいじ</rt></ruby>です。でも、もっと<ruby>大事<rt>だいじ</rt></ruby>なものがあります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">世界很重要。但是，有更重要的東西。（拿酷戮）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">オレは<ruby>強<rt>つよ</rt></ruby>いです。でも、ネテロはもっと<ruby>強<rt>つよ</rt></ruby>いです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我很強。但是，尼特羅更強。</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grammar-box p-5 mb-6 relative">
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">54. そして</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">S1。そして、S2。</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>順接接續詞，「而且、然後...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ハンターは<ruby>動物<rt>どうぶつ</rt></ruby>に<ruby>好<rt>す</rt></ruby>かれます。そして、いい<ruby>仲間<rt>なかま</rt></ruby>に<ruby>恵<rt>めぐ</rt></ruby>まれます。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">獵人受動物喜歡。而且，會遇到好同伴。</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800"><ruby>感謝<rt>かんしゃ</rt></ruby>します。そして、<ruby>祈<rt>いの</rt></ruby>ります。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">感謝。然後，祈禱。（尼特羅）</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Page 28 (Final) -->
+            <div class="page-card hidden page-slide">
+                <div class="grammar-box p-5 mb-6 relative border-pink-300">
+                    <div class="absolute -top-4 -right-4 text-4xl">🌟</div>
+                    <h3 class="text-2xl font-bold text-pink-500 mb-2">55. ～たい</h3>
+                    <p class="text-sm font-semibold text-purple-400 mb-2 bg-purple-50 inline-block px-3 py-1 rounded-full">V‐ますたいです／たくないです</p>
+                    <p class="text-gray-600 mb-4 bg-white/60 p-2 rounded-lg">🌸 <span class="font-bold">說明：</span>表示第一或第二人稱的願望，「想做...／不想做...」。</p>
+                    <div class="space-y-3">
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">ゴンと<ruby>友達<rt>ともだち</rt></ruby>になりたいです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">想要和小傑成為朋友。（奇犽）</div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-5 gap-2 items-center bg-white p-3 rounded-xl shadow-sm">
+                            <div class="md:col-span-3 text-lg font-bold text-gray-800">誰とも<ruby>争<rt>あらそ</rt></ruby>いたくないです。</div>
+                            <div class="md:col-span-2 text-md text-right text-indigo-500 font-semibold">我不想和任何人爭鬥。（酷拉皮卡）</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Congratulation Message -->
+                <div class="mt-8 text-center bg-white/80 p-6 rounded-2xl shadow border border-pink-200">
+                    <h3 class="text-xl font-bold text-purple-500 mb-2">🎉 恭喜完成全部55個文法點！</h3>
+                    <p class="text-gray-600">「オレが欲しいものは今も昔も変わらない 目の前にない『何か』だ」<br>- 金·富力士</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <div class="mt-8 flex justify-between items-center bg-white/50 p-4 rounded-2xl">
+            <button id="btn-prev" class="btn-macaron flex items-center gap-2" disabled>
+                <span>⬅️</span> 上一頁
+            </button>
+            <div id="page-indicator" class="text-pink-600 font-extrabold text-lg bg-white px-4 py-2 rounded-full shadow-inner border border-pink-100">
+                1 / 28
+            </div>
+            <button id="btn-next" class="btn-macaron flex items-center gap-2">
+                下一頁 <span>➡️</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const pages = document.querySelectorAll(".page-card");
+            const btnPrev = document.getElementById("btn-prev");
+            const btnNext = document.getElementById("btn-next");
+            const pageIndicator = document.getElementById("page-indicator");
+            let currentPage = 0;
+
+            function updateUI() {
+                pages.forEach((page, index) => {
+                    if (index === currentPage) {
+                        page.classList.remove("hidden");
+                        page.classList.add("block");
+                    } else {
+                        page.classList.remove("block");
+                        page.classList.add("hidden");
+                    }
+                });
+
+                // Update Indicator
+                pageIndicator.innerText = `${currentPage + 1} / ${pages.length}`;
+
+                // Button States
+                btnPrev.disabled = currentPage === 0;
+                btnNext.disabled = currentPage === pages.length - 1;
+                
+                // Scroll to top of card when changing page
+                document.querySelector('.castle-card').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
+            btnPrev.addEventListener("click", () => {
+                if (currentPage > 0) {
+                    currentPage--;
+                    updateUI();
+                }
+            });
+
+            btnNext.addEventListener("click", () => {
+                if (currentPage < pages.length - 1) {
+                    currentPage++;
+                    updateUI();
+                }
+            });
+
+            // Initialize
+            updateUI();
+        });
+    </script>
+</body>
+</html>
